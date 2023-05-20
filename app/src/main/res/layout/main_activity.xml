@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+  
+  <androidx.constraintlayout.widget.ConstraintLayout
+      
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUpload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/baseline_upload_file_24"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/tvText"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text ="@string/click_on_upload_button_to_upload_docx_xls_or_pdf_files"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Files"
+        android:background="@color/black"
+        app:cornerRadius="5dp"
+        android:letterSpacing="0.1"
+        app:icon="@drawable/baseline_file_upload_24"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvText" />
+    
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        tools:text ="https://drive.com/file/d/jjjhjfhjfhjgd38bfjnj883rjnfnn/view/driveSdk"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorLink="#5199D1"
+        app:layout_constraintTop_toBottomOf="@+id/uploadBtn" />
+  
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shareLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share link"
+        android:background="@color/teal_200"
+        app:cornerRadius="5dp"
+        android:visibility="gone"
+        android:letterSpacing="0.1"
+        app:icon="@drawable/baseline_link_24"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLink" />
+    
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

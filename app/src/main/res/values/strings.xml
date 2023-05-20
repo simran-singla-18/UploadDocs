@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UploadDocs</string>
+  <string name="drive_share_link">https://drive.google.com/file/d/%s/view?usp=drivesdk</string>
+  <string name="click_on_upload_button_to_upload_docx_xls_or_pdf_files">Click on upload button to upload docx, xls, or pdf files</string>
+</resources>
